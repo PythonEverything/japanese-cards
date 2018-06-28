@@ -103,7 +103,6 @@ class Pylc(QtWidgets.QMainWindow):
 
         self.show()
         self.setWindowTitle("にほん")
-        self.setWindowIcon(QtGui.QIcon("web.png"))
 
     def start_check(self):
         name = self.sender().text()
