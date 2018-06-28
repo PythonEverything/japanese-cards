@@ -20,7 +20,7 @@ class Window(QtWidgets.QWidget):
         random.shuffle(self.simples)
         #------
 
-        self.lbl = QtWidgets.QLabel(":)")
+        self.lbl = QtWidgets.QLabel("にほん")
         self.lbl.setFont(QtGui.QFont("SansSerif",30))
         self.lbl2 = QtWidgets.QLabel("")
         self.le = QtWidgets.QLineEdit()
@@ -102,7 +102,7 @@ class Pylc(QtWidgets.QMainWindow):
 
 
         self.show()
-        self.setWindowTitle("Pylc")
+        self.setWindowTitle("にほん")
         self.setWindowIcon(QtGui.QIcon("web.png"))
 
     def start_check(self):
@@ -126,7 +126,7 @@ class Pylc(QtWidgets.QMainWindow):
                         pass
                 except:
                     self.w.lbl2.setText("no more things")
-                    self.w.lbl.setText(":)")
+                    self.w.lbl.setText("にほん")
                     self.w.btn.setText("Start")
                     self.w.simples = list(self.w.hiragana.keys())
                     random.shuffle(self.w.simples)
