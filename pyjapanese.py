@@ -149,7 +149,9 @@ class Pylc(QtWidgets.QMainWindow):
 
     def katakana(self):
         if self.w.btn.text() == "Start":
-            self.w.hiragana ={"ア":"a", "イ":"i", "ウ": "u", "エ":"e", "オ":"o"}
+            self.w.hiragana ={"ア":"a", "イ":"i", "ウ": "u", "エ":"e", "オ":"o", "カ":"ka", "キ": "ki",
+ "ク":"ku", "ケ":"ke", "コ": "ko", "サ":"sa", "シ":"shi", "ス":"su",
+"セ": "se", "ソ": "so", "タ":"ta", "チ":"chi", "ツ":"tsu", "テ": "te", "ト":"to" }
             self.w.simples = list(self.w.hiragana.keys())
             random.shuffle(self.w.simples)
 
